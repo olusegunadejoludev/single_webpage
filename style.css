@@ -468,7 +468,8 @@ main .row{
   font-size: 28px;
   cursor: pointer;
   color: orange;
-  z-index: 1000;
+  overflow: hidden;
+  z-index: 1;
 }
 
 /* Override navbar and links for mobile */
@@ -491,13 +492,13 @@ main .row{
     overflow: hidden;
     max-height: 0;
     max-width: 50%;
-    transition: max-height 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
     text-align: center;
-    z-index: 1000;
+    z-index: 1;
   }
 
   .links.active {
-    max-height: 300px; /* Enough height for all links */
+    max-height: 300px;
   }
 
   .links ul {
@@ -524,7 +525,7 @@ main .row{
     flex-direction: column;
     gap: 2rem;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 50px;
     padding: 0 10px;
   }
